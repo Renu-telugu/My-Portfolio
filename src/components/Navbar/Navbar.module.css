@@ -1,0 +1,130 @@
+@import "../../vars.css";
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background: linear-gradient(90deg, #1e3c72, #2a5298, #9c27b0); /* Matching the theme */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.menu {
+  display: flex;
+}
+
+.menuBtn {
+  display: none;
+  cursor: pointer;
+  width: 32px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menuBtn:hover {
+  transform: scale(1.1);
+}
+
+.menuBtn.active {
+  transform: rotate(90deg);
+}
+
+.menuItems {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.menuItems a {
+  font-size: 18px;
+  color: white;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.menuItems a:hover {
+  color: #ffffff; /* Vibrant Purple (Matches your gradient) */
+}
+
+/* Underline Animation */
+.menuItems a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #d683e4;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.menuItems a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+
+@media screen and (max-width: 830px) {
+  .navbar {
+    padding: 20px 5%;
+  }
+
+  .menu {
+    position: absolute;
+    right: 0;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .menuBtn {
+    display: block;
+    width: 30px;
+    margin-right: 10px;
+  }
+
+  .menuItems {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #2a5298, #9c27b0);
+    padding: 20px 30px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50px;
+    right: 10px;
+  }
+
+  .menuOpen {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Ensure Navbar Doesn't Collide with Welcome Section */
+body {
+  padding-top: 70px; /* Adjust this if needed */
+}
