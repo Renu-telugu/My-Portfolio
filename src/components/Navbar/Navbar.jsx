@@ -49,7 +49,7 @@ export const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>Renuka telugu</div>
+      <div className={styles.logo}>Renu</div>
       <div className={styles.menu}>
         <img
           className={`${styles.menuBtn} ${menuOpen ? styles.active : ""}`}
