@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px 10%;
-  background: linear-gradient(90deg, #1e3c72, #2a5298, #9c27b0); /* Matching the theme */
+  background: linear-gradient(90deg, #112241, #193564, #203e71);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 }
@@ -99,7 +99,8 @@
     align-items: center;
     gap: 15px;
     border-radius: 10px;
-    background: linear-gradient(180deg, #2a5298, #9c27b0);
+    background: #19376d;
+    background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
     padding: 20px 30px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
     position: absolute;
