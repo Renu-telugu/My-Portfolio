@@ -1,0 +1,126 @@
+@import "../../vars.css";
+
+.container {
+  background: linear-gradient(45deg, #112241, #193564, #203e71);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  margin: 110px auto;
+  position: relative;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 2rem;
+  padding-bottom: 15px;
+}
+
+.projectCard {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+  gap: 2rem;
+}
+
+.projectImage {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.projectContent {
+  text-align: left;
+}
+
+.projectContent h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.projectContent p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.technologies {
+  margin-top: 1rem;
+}
+
+.techTag {
+  background: linear-gradient(90deg, #044177, #082062);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.viewButton {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(90deg, #9ddce8, #a3a2f4);
+  color: rgb(17, 15, 112);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.viewButton:hover {
+  background: linear-gradient(90deg, #a3a2f4, #9ddce8);
+  transform: scale(1.05);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 20px;
+}
+
+.navButton {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.navButton:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.dots {
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transition: background 0.3s ease;
+}
+
+.activeDot {
+  background: white;
+}
