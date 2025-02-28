@@ -12,12 +12,10 @@ export const Hero = () => {
           <span className={styles.animatedText}>Passionate Developer</span>
         </p>
 
-        {/* Contact Button */}
         <a href="#contact" className={styles.contactBtn}>
           Contact Me
         </a>
 
-        {/* Social Icons */}
         <div className={styles.socialIcons}>
           <a href="https://github.com/Renu-telugu" target="_blank" rel="noopener noreferrer">
             <FaGithub className={styles.icon} />
@@ -28,7 +26,6 @@ export const Hero = () => {
         </div>
       </div>
 
-      {/* Hero Image */}
       <img
         src={getImageUrl("hero/3d-image.webp")}
         alt="Hero image of me"

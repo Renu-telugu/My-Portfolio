@@ -18,16 +18,16 @@ export const About = () => {
         </div>
 
         <div className={styles.aboutCard}>
-          <h3>🌐 Web developer</h3>
+          <h3>🌐 Web Developer</h3>
           <p>
-            Skilled in HTML, CSS, Bootstrap, JavaScript, React.js and creating responsive, user-friendly interfaces.
+            Skilled in HTML, CSS, Bootstrap, JavaScript, React.js, and creating responsive, user-friendly interfaces.
           </p>
         </div>
 
         <div className={styles.aboutCard}>
           <h3>🛠️ Tech Explorer</h3>
           <p>
-            Certified in Google Cybersecurity, Oracle PL/SQL, and Google Cloud AI, always learning new technologies, frameworks, and best practices to stay ahead in web development.
+            Certified in Google Cybersecurity, Oracle PL/SQL, and Google Cloud AI. Always learning new technologies and best practices.
           </p>
         </div>
 

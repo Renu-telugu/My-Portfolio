@@ -9,7 +9,7 @@ import {
   faFolder,
   faAward,
   faIdBadge,
-} from "@fortawesome/free-solid-svg-icons"; // ✅ Fixed import
+} from "@fortawesome/free-solid-svg-icons";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +18,7 @@ export const Navbar = () => {
     event.preventDefault();
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
-      const offset = 80; // Stops 10px above the section
+      const offset = 70;
       const targetPosition = targetElement.offsetTop - offset;
       window.scrollTo({ top: targetPosition, behavior: "smooth" });
       setMenuOpen(false);

@@ -42,7 +42,6 @@ export const Skills = () => {
       </p>
 
       <div className={styles.skillsGrid}>
-        {/* Left Side - Languages & Frameworks (Larger) */}
         <div className={`${styles.skillsColumn} ${styles.languages}`}>
           <h3 className={styles.categoryTitle}><span className={styles.gradientText}>Languages & Frameworks</span></h3>
           <div className={styles.skillsBox}>
@@ -56,8 +55,6 @@ export const Skills = () => {
             ))}
           </div>
         </div>
-
-        {/* Right Side - Tools (Smaller) */}
         <div className={`${styles.skillsColumn} ${styles.tools}`}>
           <h3 className={styles.categoryTitle}><span className={styles.gradientText}>Tools</span></h3>
           <div className={styles.skillsBox}>
