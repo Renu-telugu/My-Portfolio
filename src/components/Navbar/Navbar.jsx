@@ -1,6 +1,15 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
 import { getImageUrl } from "../../utils";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFaceSmileBeam,
+  faCircleUser,
+  faLightbulb,
+  faFolder,
+  faAward,
+  faIdBadge,
+} from "@fortawesome/free-solid-svg-icons"; // ✅ Fixed import
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,7 +27,10 @@ export const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.logo}>Renu</div>
+      <div className={styles.logo}>
+        Renu
+        <FontAwesomeIcon icon={faFaceSmileBeam} className={styles.smileIcon} />
+      </div>
       <div className={styles.menu}>
         <img
           className={`${styles.menuBtn} ${menuOpen ? styles.active : ""}`}
@@ -36,31 +48,31 @@ export const Navbar = () => {
         >
           <li>
             <a href="#about" onClick={(e) => handleScroll(e, "about")}>
+              <FontAwesomeIcon icon={faCircleUser} className={styles.icon} />
               About
             </a>
           </li>
           <li>
             <a href="#skills" onClick={(e) => handleScroll(e, "skills")}>
+              <FontAwesomeIcon icon={faLightbulb} className={styles.icon} />
               Skills
             </a>
           </li>
           <li>
-            <a href="#education" onClick={(e) => handleScroll(e, "education")}>
-              Education
-            </a>
-          </li>
-          <li>
             <a href="#projects" onClick={(e) => handleScroll(e, "projects")}>
+              <FontAwesomeIcon icon={faFolder} className={styles.icon} />
               Projects
             </a>
           </li>
           <li>
             <a href="#achievements" onClick={(e) => handleScroll(e, "achievements")}>
+              <FontAwesomeIcon icon={faAward} className={styles.icon} />
               Achievements
             </a>
           </li>
           <li>
             <a href="#contact" onClick={(e) => handleScroll(e, "contact")}>
+              <FontAwesomeIcon icon={faIdBadge} className={styles.icon} />
               Contact
             </a>
           </li>

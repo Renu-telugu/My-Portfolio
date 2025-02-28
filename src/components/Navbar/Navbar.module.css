@@ -50,11 +50,16 @@
   color: white;
   text-decoration: none;
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   transition: color 0.3s ease-in-out;
 }
 
-.menuItems a:hover {
-  color: #ffffff; /* Vibrant Purple (Matches your gradient) */
+/* Icon Styling */
+.icon {
+  font-size: 18px;
+  color: #9395ea;
 }
 
 /* Underline Animation */
@@ -65,13 +70,19 @@
   bottom: -5px;
   width: 0;
   height: 2px;
-  background-color: #d683e4;
+  background-color: #9395ea;
   transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
 }
 
 .menuItems a:hover::after {
   width: 100%;
   left: 0;
+}
+
+.smileIcon {
+  color: rgb(225, 229, 239);
+  margin-left: 8px;
+  font-size: 24px;
 }
 
 
@@ -99,7 +110,6 @@
     align-items: center;
     gap: 15px;
     border-radius: 10px;
-    background: #19376d;
     background: linear-gradient(90deg, #19376d 0%, rgba(25, 55, 109, 0) 100%);
     padding: 20px 30px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
@@ -127,5 +137,5 @@
 
 /* Ensure Navbar Doesn't Collide with Welcome Section */
 body {
-  padding-top: 70px; /* Adjust this if needed */
+  padding-top: 70px;
 }

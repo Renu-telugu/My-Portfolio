@@ -1,101 +1,47 @@
-// import React from "react";
-
-// import styles from "./About.module.css";
-// import { getImageUrl } from "../../utils";
-
-// export const About = () => {
-//   return (
-//     <section className={styles.container} id="about">
-//       <h2 className={styles.title}>About</h2>
-//       <div className={styles.content}>
-//         <img
-//           src={getImageUrl("about/aboutImage.png")}
-//           alt="Me sitting with a laptop"
-//           className={styles.aboutImage}
-//         />
-//         <ul className={styles.aboutItems}>
-//           <li className={styles.aboutItem}>
-//             <img src={getImageUrl("about/cursorIcon.png")} alt="Cursor icon" />
-//             <div className={styles.aboutItemText}>
-//               <h3>Frontend Developer</h3>
-//               <p>
-//                 I'm a frontend developer with experience in building responsive
-//                 and optimized sites
-//               </p>
-//             </div>
-//           </li>
-//           <li className={styles.aboutItem}>
-//             <img src={getImageUrl("about/serverIcon.png")} alt="Server icon" />
-//             <div className={styles.aboutItemText}>
-//               <h3>Backend Developer</h3>
-//               <p>
-//                 I have experience developing fast and optimised back-end systems
-//                 and APIs
-//               </p>
-//             </div>
-//           </li>
-//           <li className={styles.aboutItem}>
-//             <img src={getImageUrl("about/cursorIcon.png")} alt="UI icon" />
-//             <div className={styles.aboutItemText}>
-//               <h3>UI Designer</h3>
-//               <p>
-//                 I have designed multiple landing pages and have created design
-//                 systems as well
-//               </p>
-//             </div>
-//           </li>
-//         </ul>
-//       </div>
-//     </section>
-//   );
-// };
-
-
-
 import React from "react";
 import styles from "./About.module.css";
-import { getImageUrl } from "../../utils";
 
 export const About = () => {
   return (
     <section className={styles.container} id="about">
       <h2 className={styles.title}>About Me</h2>
-      <div className={styles.content}>
-        <img
-          src={getImageUrl("about/me.png")}
-          alt="Illustration representing coding"
-          className={styles.aboutImage}
-        />
-        <ul className={styles.aboutItems}>
-          <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/codingIcon.png")} alt="Coding icon" />
-            <div className={styles.aboutItemText}>
-              <h3>Strong Problem Solver</h3>
-              <p>
-                Skilled in competitive programming and logical problem-solving, with expertise in Java and JavaScript.
-              </p>
-            </div>
-          </li>
-          <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/webIcon.png")} alt="Web icon" />
-            <div className={styles.aboutItemText}>
-              <h3>Passionate Developer</h3>
-              <p>
-                Experienced in frontend development with HTML, CSS, Bootstrap, JavaScript, and Android Studio.
-              </p>
-            </div>
-          </li>
-          <li className={styles.aboutItem}>
-            <img src={getImageUrl("about/toolsIcon.png")} alt="Tools icon" />
-            <div className={styles.aboutItemText}>
-              <h3>Tech Enthusiast</h3>
-              <p>
-                Proficient in GitHub, VS Code, and Android Studio, with strong interpersonal and teamwork skills.
-              </p>
-            </div>
-          </li>
-        </ul>
+      <p className={styles.subtitle}>
+        A <span className={styles.gradientText}>Passionate Frontend Developer</span> crafting seamless and dynamic user experiences.
+      </p>
+
+      <div className={styles.aboutGrid}>
+        <div className={styles.aboutCard}>
+          <h3>🚀 Problem Solver</h3>
+          <p>
+            Solved 500+ coding problems, honing my algorithmic thinking and efficiency in tackling challenges.
+          </p>
+        </div>
+
+        <div className={styles.aboutCard}>
+          <h3>🌐 Web developer</h3>
+          <p>
+            Skilled in HTML, CSS, Bootstrap, JavaScript, React.js and creating responsive, user-friendly interfaces.
+          </p>
+        </div>
+
+        <div className={styles.aboutCard}>
+          <h3>🛠️ Tech Explorer</h3>
+          <p>
+            Certified in Google Cybersecurity, Oracle PL/SQL, and Google Cloud AI, always learning new technologies, frameworks, and best practices to stay ahead in web development.
+          </p>
+        </div>
+
+        <div className={styles.aboutCard}>
+          <h3>🤝 Team Player & Communicator</h3>
+          <p>
+            Gained leadership and teamwork skills through the PwC Women Leadership Program, thriving in collaborative environments.
+          </p>
+        </div>
       </div>
+
+      <p className={styles.closingText}>
+        I’m passionate about building innovative tech solutions, solving challenges, and exploring AI-driven applications. Ready to push boundaries and create something amazing! 🚀
+      </p>
     </section>
   );
 };

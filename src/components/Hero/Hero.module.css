@@ -18,7 +18,7 @@
   z-index: 1;
   margin-left: 10%;
   margin-right: 10%;
-  padding: 50px;
+  padding: 50px 100px 50px 50px;
   border-radius: 20px;
   background: linear-gradient(45deg, #112241, #193564, #203e71);
   background-size: 300% 300%;

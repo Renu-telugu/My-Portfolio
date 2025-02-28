@@ -1,0 +1,125 @@
+@import "../../vars.css";
+
+.container {
+    background: linear-gradient(45deg, #112241, #193564, #203e71);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 1200px;
+    margin-top: 110px;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: -2rem;
+    position: relative;
+    z-index: 10;
+    padding-bottom: 40px;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    max-width: 800px;
+    margin: 2rem auto;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.gradientText {
+    background: linear-gradient(90deg, #9ed1ed, #b970e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+.skillsGrid {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.skillsColumn.languages {
+    flex: 2;
+}
+
+.skillsColumn.tools {
+    flex: 1;
+}
+
+.skillsColumn {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.categoryTitle {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    padding-bottom: 10px;
+}
+
+.skillsBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.skillCard {
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skillIcon,
+.skillImg {
+    background: transparent;
+    padding: 8px;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+}
+
+.skillCard:hover {
+    transform: translateY(-5px);
+}
+
+.skillIcon {
+    font-size: 3rem;
+    color: white;
+}
+
+.skillCard p {
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.skillImg {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    transition: transform 1s ease;
+}
+
+.skillCard:hover .skillImg {
+    transform: scale(1.1);
+}
