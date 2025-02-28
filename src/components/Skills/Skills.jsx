@@ -13,6 +13,7 @@ import reactIcon from "/assets/skills/react.png";
 import githubIcon from "/assets/skills/github.png";
 import vscodeIcon from "/assets/skills/vscode.png";
 import eclipseIcon from "/assets/skills/eclipse.png";
+import androidIcon from "/assets/skills/android.png";
 
 const skillsData = {
   "Languages & Frameworks": [
@@ -30,6 +31,7 @@ const skillsData = {
     { name: "GitHub", icon: <img src={githubIcon} alt="GitHub" className={styles.skillImg} /> },
     { name: "VS Code", icon: <img src={vscodeIcon} alt="VS Code" className={styles.skillImg} /> },
     { name: "Eclipse", icon: <img src={eclipseIcon} alt="Eclipse" className={styles.skillImg} /> },
+    { name: "Android Studio", icon: <img src={androidIcon} alt="Android Studio" className={styles.skillImg} /> },
   ],
 };
 
