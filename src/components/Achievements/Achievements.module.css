@@ -1,0 +1,72 @@
+@import "../../vars.css";
+
+.container {
+  background: linear-gradient(45deg, #112241, #193564, #203e71);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+  margin-top: 110px;
+  z-index: 1;
+  margin-left: 10%;
+  margin-right: 10%;
+  position: relative;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: -2rem;
+  position: relative;
+  z-index: 10;
+  padding-bottom: 40px;
+}
+
+.sectionContainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.achievementsBox, .certificationsBox {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 2rem;
+  width: 45%;
+  min-width: 280px;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.sectionTitle {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.list li {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.list li:last-child {
+  border-bottom: none;
+}

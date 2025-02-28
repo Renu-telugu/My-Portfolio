@@ -1,19 +1,17 @@
 @import "../../vars.css";
 
-/* Gradient Background Animation */
 @keyframes gradientBG {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 
-/* Main Container */
 .container {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-direction: row-reverse; /* This moves the image to the left and content to the right */
+  flex-direction: row-reverse;
   margin-top: 49px;
   z-index: 1;
   margin-left: 10%;
@@ -26,7 +24,6 @@
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Content Styling */
 .content {
   display: flex;
   flex-direction: column;
@@ -49,7 +46,6 @@
   -webkit-background-clip: text;
 }
 
-/* Typing Animation Effect */
 .animatedText::after {
   content: "|";
   display: inline-block;
@@ -62,14 +58,12 @@
   100% { opacity: 1; }
 }
 
-/* Description Styling */
 .description {
   font-size: 30px;
   font-family: var(--font-roboto);
   margin-bottom: 20px;
 }
 
-/* Contact Button */
 .contactBtn {
   text-decoration: none;
   background-color: var(--color-primary);
@@ -86,7 +80,6 @@
   transform: scale(1.1);
 }
 
-/* Social Icons */
 .socialIcons {
   margin-top: 20px;
   display: flex;
@@ -103,7 +96,6 @@
   transform: scale(1.2);
 }
 
-/* Hero Image */
 .heroImg {
   border-radius: 50%;
   height: 23rem;
@@ -115,14 +107,12 @@
   animation-timing-function: ease-in-out;
 }
 
-/* Floating Animation */
 @keyframes floating {
   0% { transform: translate(0, 0px); }
   50% { transform: translate(0, 10px); }
   100% { transform: translate(0, -0px); }
 }
 
-/* Background Blurs */
 .topBlur {
   position: absolute;
   width: 50vw;
@@ -149,7 +139,6 @@
   z-index: 0;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 830px) {
   .container {
     flex-direction: column-reverse;
