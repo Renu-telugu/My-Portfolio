@@ -2,9 +2,6 @@
 A sleek and modern **developer portfolio** showcasing my projects, skills, and experience. 
 Built using **HTML, CSS, Javascript, React.js and Vite** to ensure high performance and a smooth user experience.  
 
-## 🔗 Live Demo  
-[Check out my portfolio here!](https://renu-telugu.vercel.app/)  
-
 ---
 
 ## 🛠️ Technologies Used  
